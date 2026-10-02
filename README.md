@@ -60,14 +60,20 @@ Student turning multi-agent ideas into working frameworks — one repo at a time
 **Languages**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css3&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
 
 **AI & Agents**
 
 ![Agentic AI](https://img.shields.io/badge/Agentic_AI-0A192F?style=flat-square&logoColor=white)
 ![Multi--Agent Systems](https://img.shields.io/badge/Multi--Agent_Systems-6A0DAD?style=flat-square&logoColor=white)
 ![Swarm Intelligence](https://img.shields.io/badge/Swarm_Intelligence-5C3EE8?style=flat-square&logoColor=white)
+![RAG](https://img.shields.io/badge/RAG-FF9A00?style=flat-square&logoColor=white)
+![Context Engineering](https://img.shields.io/badge/Context_Engineering-FF4081?style=flat-square&logoColor=white)
+![Harness Engineering](https://img.shields.io/badge/Harness_Engineering-0A2540?style=flat-square&logoColor=white)
 ![Event--Driven](https://img.shields.io/badge/Event--Driven_Architecture-00ACC1?style=flat-square&logoColor=white)
 
 **LLM & ML Stack**
@@ -97,7 +103,8 @@ Student turning multi-agent ideas into working frameworks — one repo at a time
 
 ![Profile Details](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Rudra-narayan-muduli-001&theme=tokyonight)
 
-![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Rudra-narayan-muduli-001&theme=tokyo-night&hide_border=true&area=true)
+![Repos per Language](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Rudra-narayan-muduli-001&theme=tokyonight)
+![Most Commit Language](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Rudra-narayan-muduli-001&theme=tokyonight)
 
 </div>
 
@@ -108,7 +115,5 @@ Student turning multi-agent ideas into working frameworks — one repo at a time
 [![GitHub](https://img.shields.io/badge/GitHub-Rudra--narayan--muduli--001-black?style=flat-square&logo=github)](https://github.com/Rudra-narayan-muduli-001)
 
 Open to collaborations on **agent frameworks, OSINT tooling, and LLM infrastructure** — explore my repos and say hi!
-
-![](https://komarev.com/ghpvc/?username=Rudra-narayan-muduli-001&label=Profile%20views&color=blueviolet&style=flat-square)
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:7a45c7,100:1a1b27&height=120&section=footer" width="100%" alt="Footer banner" />
