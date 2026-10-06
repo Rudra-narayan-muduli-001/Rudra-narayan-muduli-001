@@ -24,16 +24,17 @@ Student turning multi-agent ideas into working frameworks — one repo at a time
 
 <div align="center">
 
-<!-- ascii portrait (left) + streak/numbers card (right). both svgs are
+<!-- profile overview (left) + streak/numbers card (right). both svgs are
      840x880 so equal widths give equal heights.
-     portrait: python scripts/prep_photo.py && python scripts/make_ascii_svg.py
-     stats:    python scripts/render_stats_svg.py (same daily workflow) -->
+     profile: python scripts/fetch_profile.py && python scripts/render_profile_svg.py
+     stats:   python scripts/fetch_contributions.py && python scripts/render_stats_svg.py
+     (same daily workflow) -->
 
 <h3><code>rudra@github ~ $ whoami</code></h3>
 
 <table>
 <tr>
-<td valign="top"><img src="./rudra-ascii.svg" width="420" alt="Rudra Narayan Muduli — ASCII portrait" /></td>
+<td valign="top"><img src="./profile.svg" width="420" alt="Rudra's GitHub profile overview — auto-refreshed daily" /></td>
 <td valign="top"><img src="./stats.svg" width="420" alt="Rudra's GitHub streak and contribution stats — auto-refreshed daily" /></td>
 </tr>
 </table>
@@ -115,24 +116,6 @@ Student turning multi-agent ideas into working frameworks — one repo at a time
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 ![OSINT](https://img.shields.io/badge/OSINT-0277BD?style=for-the-badge&logoColor=white)
 ![CLI Tools](https://img.shields.io/badge/CLI_Tooling-37474F?style=for-the-badge&logo=gnubash&logoColor=white)
-
----
-
-## 📊 GitHub Stats
-
-<div align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Rudra-narayan-muduli-001&show_icons=true&theme=tokyonight&hide_border=true)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Rudra-narayan-muduli-001&layout=compact&theme=tokyonight&hide_border=true&langs_count=8)
-
-![GitHub Streak](https://streak-stats.demolab.com?user=Rudra-narayan-muduli-001&theme=tokyonight&hide_border=true)
-
-![Profile Details](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Rudra-narayan-muduli-001&theme=tokyonight)
-
-![Repos per Language](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Rudra-narayan-muduli-001&theme=tokyonight)
-![Most Commit Language](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Rudra-narayan-muduli-001&theme=tokyonight)
-
-</div>
 
 ---
 
