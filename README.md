@@ -1,5 +1,36 @@
 <div align="center">
 
+<!-- animated contribution graph: real data, boxes reveal cell by cell
+     (regenerated daily by .github/workflows/update-profile-art.yml) -->
+
+<h3><code>rudra@github ~ $ ./contributions.sh</code></h3>
+
+<img src="./contrib-heatmap.svg" width="860" alt="Rudra's GitHub contribution graph — auto-refreshed daily" />
+
+<br>
+<br>
+
+<!-- ascii portrait (left) + streak/numbers card (right). both svgs are
+     840x880 so equal widths give equal heights.
+     portrait slot reserved: add source-photo.png + port scripts/prep_photo.py
+     and scripts/make_ascii_svg.py from AVIVASHISHTA29/AVIVASHISHTA29, then add:
+     <td valign="top"><img src="./rudra-ascii.svg" width="420" alt="Rudra Narayan Muduli — ASCII portrait" /></td>
+     stats: python scripts/render_stats_svg.py (same daily workflow) -->
+
+<h3><code>rudra@github ~ $ whoami</code></h3>
+
+<table>
+<tr>
+<td valign="top"><img src="./stats.svg" width="420" alt="Rudra's GitHub streak and contribution stats — auto-refreshed daily" /></td>
+</tr>
+</table>
+
+</div>
+
+---
+
+<div align="center">
+
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1b27,100:7a45c7&height=200&section=header&text=Rudra%20Narayan%20Muduli&fontSize=45&fontColor=c0caf5&fontAlignY=38&animation=fadeIn" width="100%" alt="Header banner" />
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=800&color=BB9AF7&center=true&vCenter=true&width=650&lines=Building+Multi-Agent+AI+Systems;OSINT+Tooling+Developer;Zero-Copy+LLM+Model+Loaders;Parallel+%C2%B7+Hierarchical+%C2%B7+Swarm+Agents)](https://github.com/Rudra-narayan-muduli-001)
