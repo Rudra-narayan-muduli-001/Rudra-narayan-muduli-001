@@ -1,8 +1,12 @@
 #!/usr/bin/env python3
 """
 Render an animated header banner (header.svg) with the name set in the
-IBM Plex Mono SemiBold font (OFL, vendored under scripts/fonts/) --
-a clean monospace that reads as developer-native.
+Pinyon Script font (OFL, vendored under scripts/fonts/) -- a formal
+bold-script hand matching the Mathematical Bold Script style, baked to
+paths so it renders identically everywhere with no webfont.
+
+The banner background is transparent: only the waves and the name carry
+color, so it blends into the page in both dark and light mode.
 
 Glyphs are baked to SVG paths via fontTools, so the banner needs no webfont
 at view time and renders identically everywhere. Background waves drift via
@@ -21,7 +25,7 @@ from fontTools.ttLib import TTFont
 from fontTools.pens.svgPathPen import SVGPathPen
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-FONT = os.path.join(HERE, "fonts", "IBMPlexMono-SemiBold.ttf")
+FONT = os.path.join(HERE, "fonts", "PinyonScript-Regular.ttf")
 OUT = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "..", "header.svg")
 
 TEXT = "Rudra Narayan Muduli"
@@ -29,7 +33,6 @@ W, H = 1200, 220
 MAX_TEXT_W = 720               # small, centered -- terminal-prompt feel
 CENTER_Y = 152              # optical center of the name (waves hang from the top)
 
-BG1, BG2 = "#1a1b27", "#2a2145"
 WAVE1, WAVE2 = "#7a45c7", "#5b34a8"
 
 font = TTFont(FONT)
@@ -111,17 +114,14 @@ parts = [
     '@media (prefers-reduced-motion: reduce){.L{opacity:1!important;animation:none!important}}'
     '</style>',
     '<defs>'
-    f'<linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">'
-    f'<stop offset="0" stop-color="{BG1}"/><stop offset=".5" stop-color="{BG2}"/>'
-    f'<stop offset="1" stop-color="{BG1}"/></linearGradient>',
     '<linearGradient id="nameGrad" x1="0" y1="0" x2="1" y2="0">'
-    '<stop offset="0" stop-color="#e8ecff"/><stop offset=".55" stop-color="#bb9af7"/>'
-    '<stop offset="1" stop-color="#7a45c7"/></linearGradient>',
+    '<stop offset="0" stop-color="#d6bcff"/><stop offset=".55" stop-color="#8b5cf6"/>'
+    '<stop offset="1" stop-color="#6d28d9"/></linearGradient>',
     '<filter id="glow" x="-20%" y="-40%" width="140%" height="180%">'
     '<feGaussianBlur stdDeviation="7" result="b"/>'
     '<feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>',
     '</defs>',
-    f'<rect width="{W}" height="{H}" rx="10" fill="url(#bg)"/>',
+    # no background rect: the banner is transparent, only waves + name carry color
     # drifting waves (back + front)
     f'<g opacity="0.28"><path d="{wave1}" fill="{WAVE1}">'
     '<animateTransform attributeName="transform" type="translate" '
