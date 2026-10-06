@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
 Render an animated header banner (header.svg) with the name set in the
-Audiowide display font (OFL, vendored under scripts/fonts/).
+IBM Plex Mono SemiBold font (OFL, vendored under scripts/fonts/) --
+a clean monospace that reads as developer-native.
 
 Glyphs are baked to SVG paths via fontTools, so the banner needs no webfont
 at view time and renders identically everywhere. Background waves drift via
@@ -20,13 +21,13 @@ from fontTools.ttLib import TTFont
 from fontTools.pens.svgPathPen import SVGPathPen
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-FONT = os.path.join(HERE, "fonts", "GreatVibes-Regular.ttf")
+FONT = os.path.join(HERE, "fonts", "IBMPlexMono-SemiBold.ttf")
 OUT = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "..", "header.svg")
 
 TEXT = "Rudra Narayan Muduli"
 W, H = 1200, 220
 MAX_TEXT_W = 1060          # side margins for the name
-CENTER_Y = 98              # optical center of the name (waves fill the bottom)
+CENTER_Y = 152              # optical center of the name (waves hang from the top)
 
 BG1, BG2 = "#1a1b27", "#2a2145"
 WAVE1, WAVE2 = "#7a45c7", "#5b34a8"
@@ -91,14 +92,15 @@ def wave_path(y_base, amp, length, periods):
         px = length * k / steps
         py = y_base + amp * math.sin(2 * math.pi * periods * k / steps)
         pts.append(f"{'M' if k == 0 else 'L'}{px:.1f},{py:.1f}")
-    # close down to the bottom over a double-wide canvas for seamless looping
-    return "".join(pts) + f"L{length:.1f},{H}L0,{H}Z"
+    # close up to the top edge over a double-wide canvas for seamless looping
+    return "".join(pts) + f"L{length:.1f},0L0,0Z"
 
 
-# double-wide waves; the group slides left by exactly one wavelength, looping
+# double-wide waves hanging from the top; each group slides left by exactly
+# one wavelength, looping
 SPAN = W * 2
-wave1 = wave_path(150, 14, SPAN, 4)
-wave2 = wave_path(172, 18, SPAN, 3)
+wave1 = wave_path(52, 12, SPAN, 4)
+wave2 = wave_path(74, 15, SPAN, 3)
 
 parts = [
     f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" '
