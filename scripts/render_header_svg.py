@@ -20,7 +20,7 @@ from fontTools.ttLib import TTFont
 from fontTools.pens.svgPathPen import SVGPathPen
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-FONT = os.path.join(HERE, "fonts", "Audiowide-Regular.ttf")
+FONT = os.path.join(HERE, "fonts", "GreatVibes-Regular.ttf")
 OUT = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "..", "header.svg")
 
 TEXT = "Rudra Narayan Muduli"
