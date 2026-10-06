@@ -26,7 +26,7 @@ OUT = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "..", "header.svg
 
 TEXT = "Rudra Narayan Muduli"
 W, H = 1200, 220
-MAX_TEXT_W = 1060          # side margins for the name
+MAX_TEXT_W = 720               # small, centered -- terminal-prompt feel
 CENTER_Y = 152              # optical center of the name (waves hang from the top)
 
 BG1, BG2 = "#1a1b27", "#2a2145"
@@ -135,6 +135,11 @@ parts = [
     glow,
     '</g>',
     f'<g filter="url(#glow)">{"".join(letters)}</g>',
+    # terminal block cursor after the name
+    f'<rect x="{(W + MAX_TEXT_W) / 2 + 14:.1f}" y="{baseline - cap_h * SIZE:.1f}" '
+    f'width="{(cap_h * SIZE) * 0.55:.1f}" height="{cap_h * SIZE:.1f}" fill="#bb9af7">'
+    '<animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.51;1" '
+    'dur="1s" repeatCount="indefinite"/></rect>',
     '</svg>',
 ]
 
