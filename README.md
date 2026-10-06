@@ -11,6 +11,19 @@ Student turning multi-agent ideas into working frameworks — one repo at a time
 
 <div align="center">
 
+<!-- animated contribution graph: real data, boxes reveal cell by cell
+     (regenerated daily by .github/workflows/update-profile-art.yml) -->
+
+<h3><code>rudra@github ~ $ ./contributions.sh</code></h3>
+
+<img src="./contrib-heatmap.svg" width="860" alt="Rudra's GitHub contribution graph — auto-refreshed daily" />
+
+<br>
+
+</div>
+
+<div align="center">
+
 <!-- ascii portrait (left) + streak/numbers card (right). both svgs are
      840x880 so equal widths give equal heights.
      portrait: python scripts/prep_photo.py && python scripts/make_ascii_svg.py
@@ -24,19 +37,6 @@ Student turning multi-agent ideas into working frameworks — one repo at a time
 <td valign="top"><img src="./stats.svg" width="420" alt="Rudra's GitHub streak and contribution stats — auto-refreshed daily" /></td>
 </tr>
 </table>
-
-</div>
-
-<div align="center">
-
-<!-- animated contribution graph: real data, boxes reveal cell by cell
-     (regenerated daily by .github/workflows/update-profile-art.yml) -->
-
-<h3><code>rudra@github ~ $ ./contributions.sh</code></h3>
-
-<img src="./contrib-heatmap.svg" width="860" alt="Rudra's GitHub contribution graph — auto-refreshed daily" />
-
-<br>
 
 </div>
 
