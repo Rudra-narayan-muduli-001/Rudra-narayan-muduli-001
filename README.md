@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1b27,100:7a45c7&height=200&section=header&text=Rudra%20Narayan%20Muduli&fontSize=45&fontColor=c0caf5&fontAlignY=38&animation=fadeIn" width="100%" alt="Header banner" />
+<img src="./header.svg" width="100%" alt="Rudra Narayan Muduli — animated banner" />
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=800&color=BB9AF7&center=true&vCenter=true&width=650&lines=Building+Multi-Agent+AI+Systems;OSINT+Tooling+Developer;Zero-Copy+LLM+Model+Loaders;Parallel+%C2%B7+Hierarchical+%C2%B7+Swarm+Agents)](https://github.com/Rudra-narayan-muduli-001)
 
