@@ -135,11 +135,6 @@ parts = [
     glow,
     '</g>',
     f'<g filter="url(#glow)">{"".join(letters)}</g>',
-    # terminal block cursor after the name
-    f'<rect x="{(W + MAX_TEXT_W) / 2 + 14:.1f}" y="{baseline - cap_h * SIZE:.1f}" '
-    f'width="{(cap_h * SIZE) * 0.55:.1f}" height="{cap_h * SIZE:.1f}" fill="#bb9af7">'
-    '<animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.51;1" '
-    'dur="1s" repeatCount="indefinite"/></rect>',
     '</svg>',
 ]
 
